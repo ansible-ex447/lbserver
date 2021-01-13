@@ -1,10 +1,9 @@
 ---
-- name: intsalling hproxy
+- name: Install DHCP
   hosts: all
   become: yes
   tasks:
-     - name: installing 
+     - name: Installing DHCP Packages
        yum:
-         name: haproxy
-         state: latest
-
+         name: dhcp*
+         state: latest 
