@@ -1,9 +1,9 @@
 ---
-- name: Install DHCP
+- name: Intsall dhcp
   hosts: all
   become: yes
   tasks:
-     - name: Installing DHCP Packages
+     - name: Installing dhcp package 
        yum:
          name: dhcp*
          state: latest 
