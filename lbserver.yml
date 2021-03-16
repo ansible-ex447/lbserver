@@ -1,9 +1,9 @@
 ---
-- name: Intsall dhcp
+- name: Intsall haproxy
   hosts: all
   become: yes
   tasks:
-     - name: Installing dhcp package 
+     - name: Installing haproxy package
        yum:
-         name: dhcp*
-         state: latest 
+         name: haproxy
+         state: installed 
